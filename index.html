@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santana</title>
+    <link rel="shortcut icon" type="image/jpg" href="resources/favicon.ico" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header__container">
+            <a class="header__element" href="index.html">
+                <img src="resources/logo.png" alt="Logo">
+            </a>
+            <nav class="header__element">
+                <a lang="pl" href="#">O mnie</a>
+                <a lang="pl" href="#">Współpraca</a>
+                <a lang="pl" href="#">Portfolio</a>
+                <a lang="pl" href="#">Opinie</a>
+                <a lang="pl" href="#">Kontakt</a>
+                <a lang="en" href="#">About</a>
+                <a lang="en" href="#">Cooperation</a>
+                <a lang="en" href="#">Portfolio</a>
+                <a lang="en" href="#">Feedback</a>
+                <a lang="en" href="#">Contact</a>
+                <select class="select--language">
+                    <option default value="pl">PL</option>
+                    <option value="en">EN</option>
+                </select>
+            </nav>
+            <button class="hamburger hamburger--slider" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </header>
+
+    <section class="gallery">
+        <div class="gallery__image"></div>
+        <div class="gallery__image"></div>
+        <div class="gallery__image"></div>
+        <div class="gallery__image"></div>
+        <div class="gallery__image"></div>
+        <div class="gallery__image"></div>
+        <div class="gallery__image"></div>
+        <div class="gallery__image"></div>
+        <div class="gallery__image"></div>
+        <div class="gallery__image"></div>
+    </section>
+    <section class="pictograms">
+        <div class="pictogram__container">
+            <div class="pictogram__image"></div>
+        </div>
+        <div class="pictogram__container">
+            <div class="pictogram__image"></div>
+        </div>
+        <div class="pictogram__container">
+            <div class="pictogram__image"></div>
+        </div>
+        <div class="pictogram__container">
+            <div class="pictogram__image"></div>
+        </div>
+        <div class="pictogram__container">
+            <div class="pictogram__image"></div>
+        </div>
+        <div class="pictogram__container">
+            <div class="pictogram__image"></div>
+        </div>
+        <div class="pictogram__container">
+            <div class="pictogram__image"></div>
+        </div>
+        <div class="pictogram__container">
+            <div class="pictogram__image"></div>
+        </div>
+        <div class="pictogram__container">
+            <div class="pictogram__image"></div>
+        </div>
+        <div class="pictogram__container">
+            <div class="pictogram__image"></div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="contact__container">
+            <div class="line">
+                <h1 lang="pl">Kontakt</h1>
+                <h1 lang="en">Contact</h1>
+            </div>
+            <div class="line">
+                <span></span>
+            </div>
+            <div class="input__container input--name">
+                <label lang="pl" for="name">Imie</label>
+                <label lang="en" for="name">Name</label>
+                <input id="name" type="text">
+            </div>
+            <div class="input__container input--topic">
+                <select lang="pl" class="select--topic">
+                    <option default>Wybierz temat</option>
+                </select>
+                <select lang="en" class="select--topic">
+                    <option default>Choose a topic</option>
+                </select>
+            </div>
+
+            <div class="input__container">
+                <input lang="pl" id="email" type="text" placeholder="Adres e-mail">
+                <input lang="en" id="email" type="text" placeholder="E-mail address">
+                <h3 lang="pl">Jestem:</h3>
+                <h3 lang="en">I am:</h3>
+                <div class="input__radio">
+                    <input id="client" type="radio" name="whoiam">
+                    <label lang="pl" for="client">Klientem</label>
+                    <label lang="en" for="client">Client</label>
+                </div>
+                <div class="input__radio">
+                    <input id="model" type="radio" name="whoiam">
+                    <label lang="pl" for="model">Modelką</label>
+                    <label lang="en" for="model">Model</label>
+                </div>
+            </div>
+
+            <div class="input__container">
+                <textarea class="textarea--message" lang="pl" placeholder="Treść wiadomości" rows="8"></textarea>
+                <textarea class="textarea--message" lang="en" placeholder="Message content" rows="8"></textarea>
+            </div>
+
+            <div class="line line--clause">
+                <input id="clause" type="checkbox">
+                <label lang="pl" for="clause">Wyrażam zgodę na przetwarzanie moich danych osobowych</label>
+                <label lang="en" for="clause">I agree to the processing of my personal data</label>
+            </div>
+            <button lang="pl">Wyślij wiadomość</button>
+            <button lang="en">Send message</button>
+
+    </section>
+
+    <footer>
+        <div class="footer__container">
+            <a class="footer__element" href="index.html">
+                <img src="resources/logo.png" alt="Logo">
+            </a>
+            <div class="sm__container footer__element">
+                <a href="index.html">
+                    <img src="resources/fb.png" alt="Facebook">
+                </a>
+                <a href="index.html">
+                    <img src="resources/tw.png" alt="Twitter">
+                </a>
+                <a href="index.html">
+                    <img src="resources/ig.png" alt="Instagram">
+                </a>
+                <a href="index.html">
+                    <img src="resources/be.png" alt="Be">
+                </a>
+            </div>
+            <div class="newsletter__container footer__element">
+                <div lang="pl" class="newsletter__element">
+                    Tipy, techniki i nowości na rynku fotograficznym
+                </div>
+                <div lang="en" class="newsletter__element">
+                    Tips, techniques and news on the photographic market
+                </div>
+                <button>Newsletter</button>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

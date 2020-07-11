@@ -1,0 +1,162 @@
+.contact {
+    padding: 3% 0% 3% 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: radial-gradient(#6865cbbd, #645fc9);
+    color: white;
+}
+
+.contact .contact__container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.contact .contact__container .line {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact .contact__container h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.contact .contact__container span {
+    display: block;
+    background-color: white;
+    height: 5px;
+    width: 4em;
+    border-radius: 3px;
+}
+
+.contact .contact__container .input__container {
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 45%;
+    margin: 1.5%;
+}
+
+.contact .contact__container .input__container label {
+    padding-left: 5%;
+}
+
+.contact .contact__container .input__container input,
+.select--topic,
+.textarea--message {
+    color: black;
+    padding-left: 5%;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    height: 3em;
+}
+
+.contact .contact__container .input__container .select--topic {
+    color: gray;
+}
+
+.contact .contact__container .input--topic {
+    align-self: flex-end;
+}
+
+.contact .contact__container .input__container .textarea--message {
+    height: auto;
+    padding: 3% 5% 3% 5%;
+}
+
+.contact .contact__container .input__radio {
+    display: flex;
+    align-items: center;
+}
+
+.contact .contact__container .line--clause {
+    display: flex;
+    align-items: center;
+    margin: 2%;
+}
+
+.contact .contact__container .line--clause input {
+    margin-right: 2%;
+}
+
+.contact .contact__container button {
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+    border: 3px white solid;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 2% 6% 2% 6%;
+    margin: 1%;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .contact .contact__container {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .contact .contact__container span {
+        margin: 3% 0% 10% 0%;
+    }
+
+    .contact .contact__container .input__container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .contact .contact__container .input__container label {
+        padding-left: 5%;
+    }
+
+    .contact .contact__container .input__container input,
+    .select--topic,
+    .textarea--message {
+        margin: 0% 0% 8% 0%;
+    }
+
+    .contact .contact__container .input__radio {
+        margin: auto;
+        margin-left: 0;
+    }
+
+    .contact .contact__container .input__radio input {
+        margin-right: 10%;
+    }
+
+    .contact .contact__container .line--clause {
+        width: 50%;
+        margin-left: 14%;
+    }
+
+
+    .contact .contact__container .line--clause input {
+        margin-right: 5%;
+    }
+
+    .contact .contact__container button {
+        font-size: 1.7em;
+        margin: 14%;
+        padding: 4%;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1271px) {
+    .contact .contact__container {
+        width: 95%;
+    }
+}
